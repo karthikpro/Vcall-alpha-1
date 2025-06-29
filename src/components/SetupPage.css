@@ -1,0 +1,162 @@
+.setup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.setup-container {
+  max-width: 500px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.setup-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  background: #f8f9fa;
+  color: #666;
+  padding: 8px 12px;
+  margin-right: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background: #e9ecef;
+}
+
+.setup-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.setup-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.room-id-input {
+  display: flex;
+  gap: 10px;
+}
+
+.room-id-input input {
+  flex: 1;
+}
+
+.generate-btn {
+  background: #667eea;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.generate-btn:hover {
+  background: #5a6fd8;
+}
+
+.generate-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.join-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.join-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4);
+}
+
+.join-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.setup-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.setup-info h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.setup-info ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.setup-info li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .setup-container {
+    padding: 20px;
+  }
+  
+  .room-id-input {
+    flex-direction: column;
+  }
+  
+  .generate-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "warp-video-server",
+  "version": "1.0.0",
+  "description": "Node.js server for video calling with WebRTC management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
